@@ -59,7 +59,7 @@ func init() {
 		panic(err)
 	}
 	setdb := redis.DialDatabase(2)    // 设置4号数据库
-	setPasswd := redis.DialPassword("houboxue") // 设置redis连接密码
+	setPasswd := redis.DialPassword("********") // 设置redis连接密码
 	pool = &redis.Pool{     //实例化一个连接池
 		MaxIdle:16,    		//最初的连接数量
 		MaxActive:0,    	//连接池最大连接数量,不确定可以用0（0表示自动定义），按需分配
